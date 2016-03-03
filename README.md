@@ -1,6 +1,6 @@
 # bb-clone
 
-> Bitcuket clone repo util
+> Bitbucket clone repo util
 
 [![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
 
