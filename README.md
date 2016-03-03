@@ -34,8 +34,8 @@ Repos will be cloned under folder `$BITBUCKET_DIR` which defaults to *~/bitbucke
     MY_BITBUCKET_USER=$(git config --global bitbucket.user)
     if [ -z "$MY_BITBUCKET_USER" ]
     then
-    	read -p "Enter your github.user: " MY_BITBUCKET_USER
-    	git config --global github.user $MY_BITBUCKET_USER
+    	read -p "Enter your bitbucket.user: " MY_BITBUCKET_USER
+    	git config --global bitbucket.user $MY_BITBUCKET_USER
     fi
 
 Parse parameter which can be given in the form `$BITBUCKET_USER/$REPO_NAME` or just `$REPO_NAME`.
