@@ -11,7 +11,7 @@ bb-clone() {
 		EOF
 		return 0
 	fi
-	BITBUCKET_DIR=${BITBUCKET_DIR:-~/bitbucket.com}
+	BITBUCKET_DIR=${BITBUCKET_DIR:-~/bitbucket.org}
 	MY_BITBUCKET_USER=$(git config --global bitbucket.user)
 	if [ -z "$MY_BITBUCKET_USER" ]
 	then
@@ -27,7 +27,7 @@ bb-clone() {
 	TARGET_DIR=$BITBUCKET_DIR/$BITBUCKET_USER
 	mkdir -p $TARGET_DIR
 	cd $TARGET_DIR
-	REPO_URL=git@bitbucket.com:$BITBUCKET_USER/${REPO_NAME}.git
+	REPO_URL=git@bitbucket.org:$BITBUCKET_USER/${REPO_NAME}.git
 	git clone $REPO_URL && cd $REPO_NAME
 	if [ -e package.json ]
 	then
